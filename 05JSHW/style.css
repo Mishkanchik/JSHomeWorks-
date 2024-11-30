@@ -58,3 +58,34 @@
     background-color: #93d84e;
     color: white;
 }
+
+.users-list {
+    display: flex;
+    flex-direction: column;
+    margin: 20px;
+    gap: 10px;
+}
+
+.user-item {
+    border: 1px solid #ddd;
+    padding: 10px;
+    cursor: pointer;
+    background-color: #f9f9f9;
+    transition: background-color 0.3s ease;
+}
+
+.user-item:hover {
+    background-color: #e9f7d5;
+}
+
+.user-details {
+    display: none;
+    padding: 10px;
+    background-color: #f4f4f4;
+    border: 1px solid #ddd;
+    margin-top: 10px;
+}
+
+.user-details.active {
+    display: block;
+}
