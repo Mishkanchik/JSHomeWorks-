@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+
+    <div class="user-form">
+        <h2>Заповніть інформацію</h2>
+        <form id="userForm">
+            <label for="name">Ім'я</label>
+            <input type="text" id="name" name="name" required placeholder="Введіть ваше ім'я">
+
+            <label for="age">Вік</label>
+            <input type="number" id="age" name="age" required placeholder="Введіть ваш вік">
+
+            <label for="dob">Дата народження</label>
+            <input type="date" id="dob" name="dob" required>
+
+            <label for="country">Країна</label>
+            <input type="text" id="country" name="country" required placeholder="Введіть вашу країну">
+
+            <label for="city">Місто</label>
+            <input type="text" id="city" name="city" required placeholder="Введіть ваше місто">
+            <label>Стать</label>
+            <div class="gender"> 
+                <label for="male">Чоловік</label>
+                <input type="radio" id="male" name="gender" value="Чоловік" required>
+              
+                <label for="female">Жінка</label>
+                <input type="radio" id="female" name="gender" value="Жінка" required>
+              
+            </div>
+           
+            
+            <label for="email">Електронна пошта</label>
+            <input type="email" id="email" name="email" required placeholder="Введіть вашу пошту">
+          
+
+            <label for="bio">Коротка біографія</label>
+            <textarea id="bio" name="bio" rows="4" required placeholder="Напишіть коротку біографію"></textarea>
+
+            <label>Мови програмування (виберіть ваші навички)</label>
+            <div class="skills">
+                <label>
+                    <input type="checkbox" name="skills" value="HTML">
+                    HTML
+                </label>
+                <label>
+                    <input type="checkbox" name="skills" value="CSS">
+                    CSS
+                </label>
+                <label>
+                    <input type="checkbox" name="skills" value="JavaScript">
+                    JavaScript
+                </label>
+                <label>
+                    <input type="checkbox" name="skills" value="PHP">
+                    PHP
+                </label>
+                <label>
+                    <input type="checkbox" name="skills" value="Python">
+                    Python
+                </label>
+                <label>
+                    <input type="checkbox" name="skills" value="Java">
+                    Java
+                </label>
+                <label>
+                    <input type="checkbox" name="skills" value="C++">
+                    C++
+                </label>
+            </div>
+
+            <button type="submit">Надіслати</button>
+        </form>
+
+    
+
+        <div id="result" class="result">
+          
+        </div>
+    <script src="/HW2/script.js"></script>
+</body>
+</html>
